@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Telegram WebApp Test</title>
+</head>
+<body>
+<script>
+window.addEventListener("load", function() {
+  if(window.Telegram && Telegram.WebApp){
+    Telegram.WebApp.showAlert("✅ Telegram.WebApp AVAILABLE!");
+  } else {
+    alert("❌ Telegram.WebApp NOT available!");
+  }
+});
+</script>
+<p>WebApp Context Tester</p>
+</body>
+</html>
